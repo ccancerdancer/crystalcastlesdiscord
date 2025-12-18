@@ -1,98 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
 
-  <title>Crystal Castles Discord Server</title>
+  <title>Crystal Castles Discord</title>
 
-  <meta name="description" content="Join the Crystal Castles Discord server. A fan-made community for Crystal Castles fans to talk about music, share edits, playlists and more.">
-
-  <meta name="keywords" content="crystal castles discord, crystal castles server, crystal castles fans, crystal castles community">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Crystal Castles Discord server. A fan-made community to connect with other fans. Est. 2020." />
+  <meta name="keywords" content="crystal castles discord, crystal castles server, crystal castles fans" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <style>
+    :root {
+      --bg: #1a1a1a;
+      --text: #eaeaea;
+      --red: #c40000;
+      --border: #2a2a2a;
+    }
+
     body {
       margin: 0;
-      height: 100vh;
-      font-family: Arial, sans-serif;
-      color: #ffffff;
-
-      /* background image */
-      background-image: url("background.jpg");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Courier New", Courier, monospace;
       display: flex;
       justify-content: center;
       align-items: center;
+      height: 100vh;
       text-align: center;
     }
 
-    /* dark overlay for readability */
-    body::before {
-      content: "";
-      position: fixed;
-      inset: 0;
-      background: rgba(0, 0, 0, 0.55);
-      z-index: 0;
-    }
-
-    .box {
-      position: relative;
-      z-index: 1;
-      max-width: 600px;
-      padding: 40px;
-      backdrop-filter: blur(2px);
+    .wrap {
+      padding: 20px;
     }
 
     h1 {
-      font-size: 42px;
-      margin-bottom: 20px;
-      letter-spacing: 1px;
+      font-size: 18px;
+      margin-bottom: 10px;
+      letter-spacing: 0.5px;
     }
 
     p {
-      font-size: 18px;
-      opacity: 0.9;
-      line-height: 1.6;
+      font-size: 13px;
+      opacity: 0.85;
+      margin-bottom: 20px;
     }
 
-    a.button {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 15px 30px;
-      background: white;
-      color: black;
+    a {
+      color: var(--red);
       text-decoration: none;
-      font-weight: bold;
-      border-radius: 6px;
+      font-size: 13px;
     }
 
-    footer {
-      margin-top: 40px;
-      font-size: 12px;
-      opacity: 0.6;
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 
 <body>
-  <div class="box">
-    <h1>CRYSTAL CASTLES Discord</h1>
+  <div class="wrap">
+    <h1>CRYSTAL CASTLES DISCORD</h1>
 
-    <p>
-      A Discord server to connect with other fans. Est. 2020
-    </p>
+    <p>a discord server to connect with other fans. est. 2020</p>
 
-    <a class="button" href="https://discord.com/invite/yNQpD4h">
-      Join the Discord
+    <a href="https://discord.com/invite/yNQpD4h">
+      join the discord server
     </a>
-
-    <footer>
-      by Dylan
-    </footer>
   </div>
 </body>
 </html>
