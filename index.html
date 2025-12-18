@@ -13,29 +13,52 @@
 
   <style>
     body {
-      background: #0e0e0e;
-      color: #ffffff;
+      margin: 0;
+      height: 100vh;
       font-family: Arial, sans-serif;
+      color: #ffffff;
+
+      /* background image */
+      background-image: url("background.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
       text-align: center;
-      margin: 0;
     }
+
+    /* dark overlay for readability */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.55);
+      z-index: 0;
+    }
+
     .box {
+      position: relative;
+      z-index: 1;
       max-width: 600px;
       padding: 40px;
+      backdrop-filter: blur(2px);
     }
+
     h1 {
       font-size: 42px;
       margin-bottom: 20px;
+      letter-spacing: 1px;
     }
+
     p {
       font-size: 18px;
-      opacity: 0.85;
+      opacity: 0.9;
       line-height: 1.6;
     }
+
     a.button {
       display: inline-block;
       margin-top: 30px;
@@ -46,10 +69,11 @@
       font-weight: bold;
       border-radius: 6px;
     }
+
     footer {
       margin-top: 40px;
       font-size: 12px;
-      opacity: 0.5;
+      opacity: 0.6;
     }
   </style>
 </head>
