@@ -30,19 +30,19 @@
       overflow: hidden;
     }
 
-    /* TOPBAR (usa este mesmo bloco no index.html também) */
+    /* Barra de navegação à esquerda */
     .topbar {
       position: fixed;
       top: 0;
       left: 0;
-      padding: 20px;              /* <- igual ao index */
+      padding: 20px;
       background: var(--bg);
       display: flex;
-      justify-content: flex-start; /* fica na esquerda */
-      gap: 12px;                   /* controla distância */
+      justify-content: flex-start; /* Fica na esquerda */
+      gap: 12px;                   /* Controla distância */
       z-index: 1000;
       font-size: 13px;
-      line-height: 1;              /* evita “saltos” */
+      line-height: 1;              /* Evita “saltos” */
     }
 
     .topbar a {
@@ -58,21 +58,20 @@
       color: var(--red);
     }
 
-    /* Content area */
+    /* Conteúdo da página */
     .wrap {
-  position: relative;
-  padding: 12px 18px;          /* ↓ menos altura */
-  max-width: 700px;            /* ↓ menos largo */
-  width: 100%;
-  background: rgba(0, 0, 0, 0.55);
-  border-radius: 8px;          /* ↓ mais subtil */
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6); /* ↓ sombra menor */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  backdrop-filter: blur(4px);  /* ↓ blur mais suave */
-}
-
+      position: relative;
+      padding: 12px 18px;
+      max-width: 700px;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.55);
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      backdrop-filter: blur(4px);
+    }
 
     h1 {
       font-size: 18px;
@@ -114,24 +113,21 @@
     .contact-info img {
       width: 70px;
       height: auto;
-      image-rendering: pixelated; /* fica mais “retro” se quiseres */
+      image-rendering: pixelated;
+      max-width: 80px;
+      margin-right: 30px;
     }
 
     .contact-info div { text-align: left; }
-
-    .contact-info img {
-  max-width: 80px; /* Diminui o tamanho do GIF */
-  margin-right: 30px; /* Aumenta a distância do conteúdo à direita (afasta o kitty) */
-}
-
   </style>
 </head>
 
-<div class="topbar">
-  <a href="home" class="active">Home</a> /
-  <a href="contact">Contact</a>
-</div>
-
+<body>
+  <!-- Barra de navegação -->
+  <div class="topbar">
+    <a href="home" class="active">Home</a> /
+    <a href="contact" class="active">Contact</a>
+  </div>
 
   <div class="wrap">
     <div class="contact-info">
@@ -147,4 +143,3 @@
   </div>
 </body>
 </html>
-
