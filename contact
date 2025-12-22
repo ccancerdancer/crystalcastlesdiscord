@@ -127,12 +127,11 @@
   </style>
 </head>
 
-<body>
-  <div class="topbar">
-    <a href="index.html">Home</a>
-    <span>/</span>
-    <a href="contact.html" class="active">Contact</a>
-  </div>
+<div class="topbar">
+  <a href="home.html" class="active">Home</a> /
+  <a href="contact.html">Contact</a>
+</div>
+
 
   <div class="wrap">
     <div class="contact-info">
