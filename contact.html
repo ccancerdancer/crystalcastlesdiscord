@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact</title>
+
+  <meta name="description" content="Got banned from Crystal Castles Discord and want to apply? Send an email to." />
+  <meta name="keywords" content="contact, banned, apply, crystal castles discord" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    :root {
+      --bg: #1a1a1a;
+      --text: #eaeaea;
+      --red: #c40000;
+      --border: #2a2a2a;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Courier New", Courier, monospace;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    /* TOPBAR (usa este mesmo bloco no index.html também) */
+    .topbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding: 20px;              /* <- igual ao index */
+      background: var(--bg);
+      display: flex;
+      justify-content: flex-start; /* fica na esquerda */
+      gap: 12px;                   /* controla distância */
+      z-index: 1000;
+      font-size: 13px;
+      line-height: 1;              /* evita “saltos” */
+    }
+
+    .topbar a {
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .topbar a:hover {
+      text-decoration: underline;
+    }
+
+    .topbar a.active {
+      color: var(--red);
+    }
+
+    /* Content area */
+    .wrap {
+  position: relative;
+  padding: 12px 18px;          /* ↓ menos altura */
+  max-width: 700px;            /* ↓ menos largo */
+  width: 100%;
+  background: rgba(0, 0, 0, 0.55);
+  border-radius: 8px;          /* ↓ mais subtil */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6); /* ↓ sombra menor */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(4px);  /* ↓ blur mais suave */
+}
+
+
+    h1 {
+      font-size: 18px;
+      margin: 0 0 10px;
+      letter-spacing: 0.5px;
+      transition: color 0.3s ease;
+      border: none;
+      display: inline-block;
+    }
+
+    h1:hover { color: var(--red); }
+
+    p {
+      font-size: 13px;
+      opacity: 0.85;
+      margin: 0 0 20px;
+    }
+
+    .email {
+      font-size: 14px;
+      color: var(--red);
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .email a {
+      color: var(--red);
+      text-decoration: none;
+    }
+
+    .email a:hover { text-decoration: underline; }
+
+    .contact-info {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+    }
+
+    .contact-info img {
+      width: 70px;
+      height: auto;
+      image-rendering: pixelated; /* fica mais “retro” se quiseres */
+    }
+
+    .contact-info div { text-align: left; }
+
+    .contact-info img {
+  max-width: 80px; /* Diminui o tamanho do GIF */
+  margin-right: 30px; /* Aumenta a distância do conteúdo à direita (afasta o kitty) */
+}
+
+  </style>
+</head>
+
+<body>
+  <div class="topbar">
+    <a href="index.html">Home</a>
+    <span>/</span>
+    <a href="contact.html" class="active">Contact</a>
+  </div>
+
+  <div class="wrap">
+    <div class="contact-info">
+      <img src="kitty.gif" alt="Helper Cat" />
+      <div>
+        <h1>Got banned and want to apply?</h1>
+        <p>Send an email to:</p>
+        <div class="email">
+          <a href="mailto:ccdiscordmodteam@gmail.com">ccdiscordmodteam@gmail.com</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
